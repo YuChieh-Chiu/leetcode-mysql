@@ -15,5 +15,6 @@
 - **Topics Tags** :
   - `Database`
 - **Difficulty Level** :
-  - `Easy` * 4
+  - `Easy` * 5
   - `Medium` * 5
+  - `Hard` * 1
