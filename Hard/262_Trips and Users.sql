@@ -13,19 +13,15 @@ WITH unbanned_users AS (
     SELECT users_id
     FROM Users
     WHERE banned = "No"
-)
-
-SELECT u.request_at AS "Day",
-    ROUND(AVG(u.status_bool), 2) AS "Cancellation Rate"
-FROM (
+), unbanned_trips AS (
     SELECT 
+        t.request_at,
+        t.client_id,
+        t.driver_id,
         CASE
             WHEN t.status = "completed" THEN 0
             ELSE 1
-        END AS "status_bool",
-        t.request_at,
-        t.client_id,
-        t.driver_id
+        END AS "status_bool"
     FROM Trips AS t
     WHERE t.client_id IN (
         SELECT *
@@ -37,5 +33,9 @@ FROM (
     )
     AND t.request_at >= "2013-10-01"
     AND t.request_at <= "2013-10-03"
-) AS u
+)
+
+SELECT u.request_at AS "Day",
+    ROUND(AVG(u.status_bool), 2) AS "Cancellation Rate"
+FROM unbanned_trips AS u
 GROUP BY u.request_at;
