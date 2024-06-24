@@ -17,4 +17,4 @@
 - **Difficulty Level** :
   - `Easy` * 5
   - `Medium` * 5
-  - `Hard` * 1
+  - `Hard` * 2
