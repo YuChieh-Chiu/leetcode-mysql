@@ -15,6 +15,8 @@
 - **Topics Tags** :
   - `Database`
 - **Difficulty Level** :
-  - `Easy` * 8
+  - `Easy` * 9
   - `Medium` * 10
   - `Hard` * 3
+- **Commit message of README.md**：
+  -  This is just a fun way to use vYears.Months.Days to track the number of years, months, days that I've been practicing LeetCode.
