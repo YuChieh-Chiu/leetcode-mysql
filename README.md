@@ -16,5 +16,5 @@
   - `Database`
 - **Difficulty Level** :
   - `Easy` * 8
-  - `Medium` * 9
+  - `Medium` * 10
   - `Hard` * 3
