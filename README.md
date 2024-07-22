@@ -15,7 +15,7 @@
 - **Topics Tags** :
   - `Database`
 - **Difficulty Level** :
-  - `Easy` * 15
+  - `Easy` * 16
   - `Medium` * 13
   - `Hard` * 3
 - **Commit message of README.md**：
